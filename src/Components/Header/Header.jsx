@@ -1,17 +1,38 @@
 import React from "react";
 import { HeaderStyled } from "./HeaderStyles";
 import Navbar from "./Navbar/Navbar";
+import PhoneNavbar from "./Navbar/PhoneNavbar/PhoneNavbar";
+import phoneNavContext, {
+  phoneNavbarOpen,
+} from "./Navbar/PhoneNavbar/PhoneNavbarContext";
+import { useState } from "react";
 
 import logo from "./../../assets/imgs/Logo/logo.png";
 
 function Header() {
+  const [phoneNavState, setPhoneNavState] = useState(phoneNavbarOpen.Closed);
+  const togglePhoneNav = () => {
+    phoneNavState === phoneNavbarOpen.Closed
+      ? setPhoneNavState(phoneNavbarOpen.Open)
+      : setPhoneNavState(phoneNavbarOpen.Closed);
+  };
+  const closePhoneNav = () => {
+    setPhoneNavState(phoneNavbarOpen.Closed);
+  };
+
   return (
-    <HeaderStyled>
-      <a href="#">
-        <img src={logo} alt="logo" />
-      </a>
-      <Navbar />
-    </HeaderStyled>
+    <phoneNavContext.Provider
+      value={{ phoneNavState, togglePhoneNav, closePhoneNav }}
+    >
+      {" "}
+      <HeaderStyled>
+        <a href="#">
+          <img src={logo} alt="logo" />
+        </a>
+        <Navbar />
+      </HeaderStyled>
+      <PhoneNavbar />
+    </phoneNavContext.Provider>
   );
 }
 

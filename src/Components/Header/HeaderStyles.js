@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
   color: var(--secondary);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 2px solid var(--secondary);
 
   img {

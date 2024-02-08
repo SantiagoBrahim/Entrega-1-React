@@ -1,7 +1,11 @@
 import React from "react";
 import { NavbarStyled } from "./NavbarStyles";
+import phoneNavContext from "./PhoneNavbar/PhoneNavbarContext";
+import { useContext } from "react";
 
 function Navbar() {
+  const { togglePhoneNav } = useContext(phoneNavContext);
+
   return (
     <NavbarStyled>
       <ul className="navbarLinks">
@@ -18,7 +22,7 @@ function Navbar() {
       <button className="cartIcon">
         <i className="fa-solid fa-cart-shopping"></i>
       </button>
-      <button className="navbarMenuIcon">
+      <button className="navbarMenuIcon" onClick={togglePhoneNav}>
         <i className="fa-solid fa-bars"></i>
       </button>
     </NavbarStyled>
