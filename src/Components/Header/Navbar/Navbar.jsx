@@ -10,13 +10,13 @@ function Navbar() {
     <NavbarStyled>
       <ul className="navbarLinks">
         <li>
-          <a href="#menu">Menú</a>
+          <a href="/menu">Menú</a>
         </li>
         <li>
-          <a href="#locals">Locales</a>
+          <a href="/about">Sobre Nosotros</a>
         </li>
         <li>
-          <a href="#">Contacto</a>
+          <a href="/contact">Contacto</a>
         </li>
       </ul>
       <button className="cartIcon">

@@ -13,17 +13,17 @@ function PhoneNavbar() {
     >
       <ul className="navbarLinks">
         <li>
-          <a href="#menu" onClick={closePhoneNav}>
+          <a href="/menu" onClick={closePhoneNav}>
             Menú
           </a>
         </li>
         <li>
-          <a href="#locals" onClick={closePhoneNav}>
-            Locales
+          <a href="/about" onClick={closePhoneNav}>
+            Sobre Nosotros
           </a>
         </li>
         <li>
-          <a href="#" onClick={closePhoneNav}>
+          <a href="/contact" onClick={closePhoneNav}>
             Contacto
           </a>
         </li>

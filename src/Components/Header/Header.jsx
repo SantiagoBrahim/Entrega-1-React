@@ -26,7 +26,7 @@ function Header() {
     >
       {" "}
       <HeaderStyled>
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="logo" />
         </a>
         <Navbar />

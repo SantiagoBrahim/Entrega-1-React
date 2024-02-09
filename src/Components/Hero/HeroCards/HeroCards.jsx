@@ -7,15 +7,18 @@ import HeroCard from "./HeroCard";
 function HeroCards() {
   return (
     <HeroCardsStyled>
-      {heroCards.map((card) => {
-        return (
-          <HeroCard
-            key={card.id}
-            title={card.title}
-            description={card.description}
-          />
-        );
-      })}
+      <div className="cards-container">
+        {heroCards.map((card) => {
+          return (
+            <HeroCard
+              key={card.id}
+              title={card.title}
+              description={card.description}
+            />
+          );
+        })}
+      </div>
+      <button>Sobre Nosotros</button>
     </HeroCardsStyled>
   );
 }

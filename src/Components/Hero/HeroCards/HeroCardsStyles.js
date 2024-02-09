@@ -2,12 +2,19 @@ import styled from "styled-components";
 
 export const HeroCardsStyled = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 450px 10px 200px 10px;
-  gap: 250px;
-
+  gap: 100px;
   background-color: var(--primary);
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+  }
 
   .card {
     display: flex;
@@ -37,6 +44,23 @@ export const HeroCardsStyled = styled.div`
   .card:first-child,
   .card:last-child {
     transform: translateY(-100px);
+  }
+
+  button {
+    font-size: 2rem;
+    background-color: var(--secondary);
+    padding: 10px;
+    font-family: var(--text-font);
+    border: 2px solid var(--secondary);
+    color: var(--primary);
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+
+  button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    cursor: pointer;
   }
 
   @media (max-width: 1440px) {
