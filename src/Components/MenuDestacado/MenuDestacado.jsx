@@ -21,6 +21,9 @@ function MenuDestacado() {
           );
         })}
       </div>
+      <div className="see-more-container">
+        <button className="see-more-btn">Ver Más</button>
+      </div>
       <hr />
     </MenuDestacadoStyled>
   );

@@ -78,6 +78,28 @@ export const MenuDestacadoStyled = styled.div`
     color: var(--secondary);
   }
 
+  .see-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .see-more-btn {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+
+  .see-more-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+
   @media (max-width: 375px) {
     h2 {
       font-size: 2.6rem;
