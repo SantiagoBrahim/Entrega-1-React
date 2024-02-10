@@ -32,4 +32,10 @@ export const AboutAboutStyled = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (min-width: 1921px) {
+    p {
+      width: 1200px;
+    }
+  }
 `;

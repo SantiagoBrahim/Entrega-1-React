@@ -62,4 +62,10 @@ export const AboutReviewsStyled = styled.div`
       padding: 10px;
     }
   }
+
+  @media (min-width: 1921px) {
+    .reviews-container {
+      width: 1200px;
+    }
+  }
 `;

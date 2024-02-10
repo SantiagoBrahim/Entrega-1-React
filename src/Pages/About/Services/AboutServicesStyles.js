@@ -86,4 +86,10 @@ export const AboutServicesStyled = styled.div`
       width: 250px;
     }
   }
+
+  @media (min-width: 1921px) {
+    .cards-container {
+      width: 1200px;
+    }
+  }
 `;

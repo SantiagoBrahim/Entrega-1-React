@@ -96,4 +96,10 @@ export const AboutHeroStyled = styled.div`
       gap: 20px;
     }
   }
+
+  @media (min-width: 1921px) {
+    .text {
+      width: 600px;
+    }
+  }
 `;
