@@ -26,4 +26,10 @@ export const AboutAboutStyled = styled.div`
     font-size: 1.1rem;
     padding: 30px 0 0 0;
   }
+
+  @media (max-width: 425px) {
+    p {
+      font-size: 1rem;
+    }
+  }
 `;

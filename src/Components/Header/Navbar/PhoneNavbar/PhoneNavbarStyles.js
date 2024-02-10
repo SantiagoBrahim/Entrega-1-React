@@ -53,4 +53,11 @@ export const PhoneNavbarStyled = styled.div`
     cursor: pointer;
     color: #000;
   }
+
+  @media (max-width: 425px) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: 320px) {
+    font-size: 1.5rem;
+  }
 `;

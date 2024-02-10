@@ -13,6 +13,7 @@ export const AboutReviewsStyled = styled.div`
     font-family: var(--title-font);
     font-size: 2.5rem;
     color: var(--secondary);
+    text-align: center;
   }
   hr {
     width: 100%;
@@ -49,5 +50,16 @@ export const AboutReviewsStyled = styled.div`
   }
   .review__description p {
     font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .reviews-container {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 320px) {
+    .reviews-container {
+      padding: 10px;
+    }
   }
 `;

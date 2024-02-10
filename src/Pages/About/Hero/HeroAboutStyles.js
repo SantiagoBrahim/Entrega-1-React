@@ -6,7 +6,6 @@ export const AboutHeroStyled = styled.div`
   align-items: center;
   gap: 80px;
   padding: 40px;
-
   text-align: center;
 
   h1 {
@@ -56,5 +55,45 @@ export const AboutHeroStyled = styled.div`
   }
   .bold {
     font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+    gap: 40px;
+    padding: 10px;
+
+    img {
+      width: 400px;
+      height: 250px;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    .text > p {
+      font-size: 1rem;
+    }
+    .info {
+      padding: 10px;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding: 5px;
+    flex-direction: column;
+
+    img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
   }
 `;

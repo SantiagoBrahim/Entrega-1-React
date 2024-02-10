@@ -11,6 +11,7 @@ export const AboutServicesStyled = styled.div`
   h2 {
     font-family: var(--title-font);
     font-size: 2.5rem;
+    text-align: center;
   }
   hr {
     width: 100%;
@@ -21,6 +22,8 @@ export const AboutServicesStyled = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -38,7 +41,7 @@ export const AboutServicesStyled = styled.div`
     align-items: center;
   }
   .card > div {
-    width: 100%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,5 +62,28 @@ export const AboutServicesStyled = styled.div`
     background-color: var(--secondary);
     border-radius: 10px;
     padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      height: 350px;
+    }
+  }
+  @media (max-width: 425px) {
+    .card {
+      height: 400px;
+    }
+    .card > div {
+      width: 300px;
+    }
+  }
+  @media (max-width: 320px) {
+    .card {
+      height: 350px;
+      padding: 0;
+    }
+    .card > div {
+      width: 250px;
+    }
   }
 `;

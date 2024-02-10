@@ -71,14 +71,18 @@ export const HeroCardsStyled = styled.div`
   @media (max-width: 1024px) {
     gap: 50px;
     padding: 380px 10px 200px 10px;
-  }
 
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    padding: 100px 10px 200px 10px;
+    .cards-container {
+      gap: 100px;
+      flex-wrap: wrap;
+    }
     .card:first-child,
     .card:last-child {
       transform: translateY(0);
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 100px 10px 200px 10px;
   }
 `;

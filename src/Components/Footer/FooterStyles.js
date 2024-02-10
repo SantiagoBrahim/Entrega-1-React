@@ -22,6 +22,7 @@ export const FooterStyled = styled.footer`
   div > a {
     text-decoration: none;
     color: var(--primary);
+    text-align: center;
   }
 
   button {
