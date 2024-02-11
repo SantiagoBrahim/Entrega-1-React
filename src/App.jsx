@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header.jsx";
 import Layout from "./Pages/Layout.jsx";
 import About from "./Pages/About/About.jsx";
 import MenuPage from "./Pages/Menu/MenuPage.jsx";
+import ContactPage from "./Pages/Contact/ContactPage.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="about" element={<About />} />
         <Route path="menu" element={<MenuPage />} />
+        <Route path="contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </>
