@@ -46,7 +46,7 @@ export const HeroCardsStyled = styled.div`
     transform: translateY(-100px);
   }
 
-  button {
+  .link-btn {
     font-size: 2rem;
     background-color: var(--secondary);
     padding: 10px;
@@ -54,10 +54,11 @@ export const HeroCardsStyled = styled.div`
     border: 2px solid var(--secondary);
     color: var(--primary);
     border-radius: 10px;
+    text-decoration: none;
     transition: all 0.2s;
   }
 
-  button:hover {
+  .link-btn:hover {
     background-color: var(--primary);
     color: var(--secondary);
     cursor: pointer;

@@ -1,8 +1,8 @@
 import React from "react";
 import { HeroCardsStyled } from "./HeroCardsStyles";
-
 import { heroCards } from "./heroCardsArray";
 import HeroCard from "./HeroCard";
+import { Link } from "react-router-dom";
 
 function HeroCards() {
   return (
@@ -18,7 +18,9 @@ function HeroCards() {
           );
         })}
       </div>
-      <button>Sobre Nosotros</button>
+      <Link className="link-btn" to="/about">
+        Sobre Nosotros
+      </Link>
     </HeroCardsStyled>
   );
 }

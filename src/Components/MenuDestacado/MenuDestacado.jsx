@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { MenuDestacadoStyled } from "./MenuDestacadoStyles";
-
 import { menuDestacado } from "./menu";
 import ComidaDestacada from "./ComidaDestacada";
 
@@ -22,7 +22,9 @@ function MenuDestacado() {
         })}
       </div>
       <div className="see-more-container">
-        <button className="see-more-btn">Ver Más</button>
+        <Link className="see-more-btn" to="/menu">
+          Ver Más
+        </Link>
       </div>
       <hr />
     </MenuDestacadoStyled>

@@ -2,6 +2,7 @@ import React from "react";
 import { ContactStyled } from "./ContactStyles";
 
 function ContactPage() {
+  window.scrollTo(0, 0);
   return (
     <ContactStyled>
       <h1>Contacto</h1>

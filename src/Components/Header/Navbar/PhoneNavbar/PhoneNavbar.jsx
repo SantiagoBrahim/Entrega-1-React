@@ -2,6 +2,7 @@ import React from "react";
 import { PhoneNavbarStyled } from "./PhoneNavbarStyles.js";
 import { useContext } from "react";
 import phoneNavContext from "./PhoneNavbarContext.jsx";
+import { Link } from "react-router-dom";
 
 function PhoneNavbar() {
   const { phoneNavState, closePhoneNav } = useContext(phoneNavContext);
@@ -13,19 +14,19 @@ function PhoneNavbar() {
     >
       <ul className="navbarLinks">
         <li>
-          <a href="/menu" onClick={closePhoneNav}>
+          <Link to="/menu" onClick={closePhoneNav}>
             Menú
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about" onClick={closePhoneNav}>
+          <Link to="/about" onClick={closePhoneNav}>
             Sobre Nosotros
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/contact" onClick={closePhoneNav}>
+          <Link to="/contact" onClick={closePhoneNav}>
             Contacto
-          </a>
+          </Link>
         </li>
       </ul>
     </PhoneNavbarStyled>

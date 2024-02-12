@@ -6,6 +6,7 @@ import phoneNavContext, {
   phoneNavbarOpen,
 } from "./Navbar/PhoneNavbar/PhoneNavbarContext";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "./../../assets/imgs/Logo/logo.png";
 
@@ -24,11 +25,10 @@ function Header() {
     <phoneNavContext.Provider
       value={{ phoneNavState, togglePhoneNav, closePhoneNav }}
     >
-      {" "}
       <HeaderStyled>
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <Navbar />
       </HeaderStyled>
       <PhoneNavbar />

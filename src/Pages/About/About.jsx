@@ -6,6 +6,7 @@ import AboutServices from "./Services/AboutServices";
 import AboutReviews from "./Reviews/AboutReviews";
 
 function About() {
+  window.scrollTo(0, 0);
   return (
     <>
       <GlobalStyle />

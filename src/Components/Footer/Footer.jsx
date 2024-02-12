@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FooterStyled } from "./FooterStyles";
 
 function Footer() {
@@ -12,7 +13,9 @@ function Footer() {
         <a href="#">Blog</a>
         <a href="#">Centro de socios</a>
       </div>
-      <button>Contáctanos</button>
+      <Link className="contact-link" to="/contact">
+        Contáctanos
+      </Link>
       <hr />
       <p className="copyright-text">
         ©2023 Turbo Taste: Todos los derechos reservados

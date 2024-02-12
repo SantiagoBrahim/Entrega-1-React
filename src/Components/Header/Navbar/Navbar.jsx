@@ -2,6 +2,7 @@ import React from "react";
 import { NavbarStyled } from "./NavbarStyles";
 import phoneNavContext from "./PhoneNavbar/PhoneNavbarContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { togglePhoneNav } = useContext(phoneNavContext);
@@ -10,13 +11,19 @@ function Navbar() {
     <NavbarStyled>
       <ul className="navbarLinks">
         <li>
-          <a href="/menu">Menú</a>
+          <Link className="navbar__link" to="/menu">
+            Menú
+          </Link>
         </li>
         <li>
-          <a href="/about">Sobre Nosotros</a>
+          <Link className="navbar__link" to="/about">
+            Sobre Nosotros
+          </Link>
         </li>
         <li>
-          <a href="/contact">Contacto</a>
+          <Link className="navbar__link" to="/contact">
+            Contacto
+          </Link>
         </li>
       </ul>
       <button className="cartIcon">

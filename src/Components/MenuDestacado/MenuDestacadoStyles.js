@@ -91,6 +91,7 @@ export const MenuDestacadoStyled = styled.div`
     color: var(--secondary);
     border: 2px solid var(--primary);
     border-radius: 10px;
+    text-decoration: none;
     transition: all 0.2s;
   }
 

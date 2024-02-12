@@ -25,7 +25,7 @@ export const FooterStyled = styled.footer`
     text-align: center;
   }
 
-  button {
+  .contact-link {
     font-family: var(--text-font);
     background-color: var(--primary);
     color: var(--secondary);
@@ -33,10 +33,11 @@ export const FooterStyled = styled.footer`
     border-radius: 10px;
     border: none;
     padding: 10px 8px;
+    text-decoration: none;
     transition: all 0.1s;
   }
 
-  button:hover {
+  .contact-link:hover {
     cursor: pointer;
     background-color: var(--secondary);
     color: var(--primary);

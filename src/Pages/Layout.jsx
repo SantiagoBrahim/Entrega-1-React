@@ -5,6 +5,7 @@ import LocalesAdheridos from "../Components/LocalesAdheridos/LocalesAdheridos";
 import Footer from "../Components/Footer/Footer";
 
 function Layout() {
+  window.scrollTo(0, 0);
   return (
     <main>
       <Hero />

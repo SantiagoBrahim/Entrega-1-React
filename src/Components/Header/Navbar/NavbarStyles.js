@@ -18,7 +18,7 @@ export const NavbarStyled = styled.nav`
     gap: 10px;
   }
 
-  a {
+  .navbar__link {
     padding: 6px 10px;
     background-color: var(--primary);
     color: var(--secondary);
@@ -27,7 +27,7 @@ export const NavbarStyled = styled.nav`
     transition: all 0.1s;
   }
 
-  a:hover {
+  .navbar__link:hover {
     background-color: var(--secondary);
     color: var(--primary);
     outline: 2px solid var(--primary);

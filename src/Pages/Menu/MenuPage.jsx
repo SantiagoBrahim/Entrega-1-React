@@ -4,6 +4,7 @@ import MenuCard from "./MenuCard";
 import { menuCardsArray } from "./MenuCardsArray";
 
 function MenuPage() {
+  window.scrollTo(0, 0);
   const renderCards = (cards) => {
     return cards.map((card) => {
       return (
